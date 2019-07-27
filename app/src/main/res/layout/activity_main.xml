@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1) In which country is basketball a major sport?"
+            android:layout_marginLeft="1dp"
+            android:textSize="19sp"
+            android:textColor="#000000"/>
+
+        <RadioGroup
+            android:layout_marginTop="5dp"
+            android:id="@+id/groupradio"
+            android:layout_marginLeft="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radia_id1"
+                android:text="Canada"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_q1_id2"
+                android:text="USA"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radia_id3"
+                android:text="Australia"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radia_id4"
+                android:text="United Kingdom"
+                android:textSize="20sp"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Clear" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2) Whose is in the top 2 point guard list from the below options?"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="1dp"
+            android:textSize="19sp"
+            android:textColor="#000000"/>
+
+
+            <CheckBox
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radia_id5"
+                android:text="Steph Curry"
+                android:textSize="20sp"/>
+
+            <CheckBox
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radia_id6"
+                android:text="James Harden"
+                android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/clear01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Clear"
+            android:onClick="clearCheckboxQuestion" />
+
+        <Button
+            android:id="@+id/submit02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:onClick="submitOrder"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3) What is it called when a player scores a point?"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="1dp"
+            android:textSize="19sp"
+            android:textColor="#000000"/>
+
+        <RadioGroup
+            android:layout_marginTop="5dp"
+            android:id="@+id/groupradio01"
+            android:layout_marginLeft="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radia_id7"
+                android:text="Goal"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radia_id8"
+                android:text="Touchdown"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radia_id9"
+                android:text="Home Run"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radia_id10"
+                android:text="A basket"
+                android:textSize="20sp"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/clear02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Clear" />
+
+        <Button
+            android:id="@+id/submit01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4) How many players are allowed on the court from each team?"
+            android:textSize="19sp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/quantity_view"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:hint="Quantity"
+            android:paddingTop="5dp"
+            android:inputType="text"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Clear"
+            android:onClick="clearTextQuestion"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:onClick="submitOrder"/>
+
+    </LinearLayout>
+
+</ScrollView>
